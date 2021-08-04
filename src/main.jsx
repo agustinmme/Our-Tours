@@ -5,7 +5,7 @@ import App from './App'
 import { ChakraProvider,Box } from "@chakra-ui/react"
 ReactDOM.render(
 <ChakraProvider>
-<Box bg="black.500" minHeight="100vh">
+<Box bg="gray.700" >
           <App />
       </Box>
     </ChakraProvider>,

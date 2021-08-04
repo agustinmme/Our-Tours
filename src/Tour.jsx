@@ -35,10 +35,10 @@ function Tour({id,img,name,price,info,remove}) {
           </Flex>
           <Box>
             <Text as="span" color="gray.600">
-              {showMore?info.substring(0, 200):info+(showMore?"...":"")}
+              {showMore?info.substring(0, 200)+("... "):info+" "}
             </Text>
-            <Box as="span" color="blue.600" fontSize="sm" onClick={() =>(setShowMore(!showMore))}>
-              {showMore?" Read More":" Show less"}
+            <Box as="button" color="blue.600" fontSize="sm" onClick={() =>(setShowMore(!showMore))}>
+              {showMore?" Read More":"Show less"}
             </Box>
           </Box>
           <Button colorScheme="red" variant="outline" onClick={() =>(remove(id))}>

@@ -31,7 +31,7 @@ function Tour({id,img,name,price,info,remove}) {
               {name}
             </Heading>
             <Spacer />
-            <Badge colorScheme="blue">{price}</Badge>
+            <Badge colorScheme="blue">{"$"+price}</Badge>
           </Flex>
           <Box>
             <Text as="span" color="gray.600">

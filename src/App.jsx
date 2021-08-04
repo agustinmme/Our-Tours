@@ -62,10 +62,10 @@ function App() {
             <Center>
           <Heading>Our Tours</Heading>
           </Center>
-          <Box><Heading>No hay mas tours</Heading>
+          <Stack><Heading as="h5" size="md">No hay mas tours</Heading>
           <Button colorScheme={"green"} onClick={() => fetchAll()}>
-            Resetear
-          </Button></Box>
+            Recargar
+          </Button></Stack>
           
         </Stack>
     </Center>

@@ -60,9 +60,9 @@ function App() {
           spacing={4}
         >
             <Center>
-          <Heading>Our Tours</Heading>
+          <Heading color="white">Our Tours</Heading>
           </Center>
-          <Stack><Heading as="h5" size="md">No hay mas tours</Heading>
+          <Stack><Heading as="h5" color="white" size="md">No hay mas tours</Heading>
           <Button colorScheme={"green"} onClick={() => fetchAll()}>
             Recargar
           </Button></Stack>
@@ -80,7 +80,7 @@ function App() {
           spacing={4}
         >
             <Center>
-          <Heading>Our Tours</Heading>
+            <Heading color="white">Our Tours</Heading>
           </Center>
           <List lista={data} remove={removeTour}/>
         </Stack>

@@ -37,7 +37,7 @@ function App() {
   };
   if(loading){
     return (
-      <Center color='gray.50'>
+      <Center >
           <Stack
             direction={"column"}
             divider={<StackDivider borderColor="white" />}
@@ -53,7 +53,7 @@ function App() {
   }
   if (data.length === 0) {
     return (
-      <Center color='gray.50'>
+      <Center>
               <Stack
           direction={"column"}
           divider={<StackDivider borderColor="white" />}
@@ -73,7 +73,7 @@ function App() {
     )
   }
   return (
-    <Center color='gray.50'>
+    <Center>
         <Stack
           direction={"column"}
           divider={<StackDivider borderColor="white" />}

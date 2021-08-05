@@ -40,11 +40,13 @@ function App() {
       <Center >
           <Stack
             direction={"column"}
-            divider={<StackDivider borderColor="white" />}
             spacing={4}
           >
               <Center>
-            <Heading>Our Tours</Heading>
+              <Stack spacing="3" align={"center"}>
+            <Heading color="white">Our Tours</Heading>
+            <div className="underline" />
+            </Stack>
             </Center>
             <Loading/>
           </Stack>
@@ -56,11 +58,13 @@ function App() {
       <Center>
               <Stack
           direction={"column"}
-          divider={<StackDivider borderColor="white" />}
           spacing={4}
         >
             <Center>
-          <Heading color="white">Our Tours</Heading>
+            <Stack spacing="3" align={"center"}>
+            <Heading color="white">Our Tours</Heading>
+            <div className="underline" />
+            </Stack>
           </Center>
           <Stack><Heading as="h5" color="white" size="md">No hay mas tours</Heading>
           <Button colorScheme={"green"} onClick={() => fetchAll()}>
@@ -76,11 +80,13 @@ function App() {
     <Center>
         <Stack
           direction={"column"}
-          divider={<StackDivider borderColor="white" />}
           spacing={4}
         >
             <Center>
+              <Stack spacing="3" align={"center"}>
             <Heading color="white">Our Tours</Heading>
+            <div className="underline" />
+            </Stack>
           </Center>
           <List lista={data} remove={removeTour}/>
         </Stack>
